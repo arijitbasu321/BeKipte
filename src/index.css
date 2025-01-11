@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #4338ca;
+}
+
+body {
+  @apply bg-gradient-to-br from-indigo-50 via-white to-purple-50;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Custom styles for cards and containers */
+.card {
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl border border-indigo-100 shadow-sm hover:shadow-md transition-all;
+}
+
+.input-field {
+  @apply mt-1 block w-full rounded-xl border-indigo-200 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-white/80;
+}
+
+.button-primary {
+  @apply px-4 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl shadow-sm hover:shadow-md transition-all hover:scale-105;
+}
+
+.button-secondary {
+  @apply px-4 py-2 bg-white text-gray-700 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all hover:scale-105;
+}
